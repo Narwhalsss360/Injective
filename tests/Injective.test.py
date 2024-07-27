@@ -60,7 +60,7 @@ def main() -> None:
         split_row = row.split(',')
         name_to_code[split_row[0]] = split_row[1]
 
-    code_to_name = name_to_code.inverse()
+    code_to_name = dict(name_to_code.inverse())
     while True:
         entry = input('Enter state name, code or exit:')
         if entry.casefold() == 'exit'.casefold():

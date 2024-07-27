@@ -1,3 +1,17 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "injective"
+authors = [
+    {name = "Franklyn Vasquez", email = "franklynvasquez24@gmail.com"},
+]
+description = "Easily invert dictionary using Injective"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+dynamic = ["version"]
